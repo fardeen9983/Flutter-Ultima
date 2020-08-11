@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ultima/sections/animations/shake_transition/shake_transition.dart';
+import 'package:flutter_ultima/sections/home/widgets/widget.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -20,7 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
         centerTitle: false,
       ),
       body: ListView(
-        children: [],
+        children: [
+          HomeEntry(
+              title: "Shake Transition", next: ShakeTransitionAboutScreen.TAG)
+        ],
       ),
     );
   }

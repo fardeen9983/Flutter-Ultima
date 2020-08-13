@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ultima/sections/animations/shake_transition/widgets/widgets.dart';
 
 class ShakeTransitionHomeScreen extends StatefulWidget {
-  static const TAG = "sh-tr-ho-screen";
+  static const TAG = "/sh-tr-ho-screen";
 
   @override
   _ShakeTransitionHomeScreenState createState() =>

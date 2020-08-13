@@ -3,7 +3,7 @@ import 'package:flutter_ultima/sections/animations/shake_transition/shake_transi
 import 'package:flutter_ultima/sections/animations/shake_transition/ui.dart';
 
 class ShakeTransitionAboutScreen extends StatefulWidget {
-  static const TAG = "sh-tr-ab-screen";
+  static const TAG = "/sh-tr-ab-screen";
 
   @override
   _ShakeTransitionAboutScreenState createState() =>

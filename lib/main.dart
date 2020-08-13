@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ultima/sections/animations/shake_transition/shake_transition.dart';
+import 'package:flutter_ultima/sections/animations/snake_animation/about.dart';
+import 'package:flutter_ultima/sections/animations/snake_animation/snake_animation.dart';
 
 import 'sections/home/ui.dart';
 
@@ -21,6 +23,9 @@ class App extends StatelessWidget {
         onGenerateRoute: (RouteSettings settings) {
           var route;
           switch (settings.name) {
+
+            /////// ANIMATIONS //////
+            // Shake Transition
             case ShakeTransitionAboutScreen.TAG:
               route = MaterialPageRoute(
                   builder: (_) => ShakeTransitionAboutScreen(),
@@ -31,6 +36,19 @@ class App extends StatelessWidget {
                   builder: (_) => ShakeTransitionHomeScreen(),
                   settings: settings);
               break;
+
+            // Snake animation
+            case SnakeAnimationAboutScreen.TAG:
+              route = MaterialPageRoute(
+                  builder: (_) => SnakeAnimationAboutScreen(),
+                  settings: settings);
+              break;
+            case SnakeAnimationHomeScreen.TAG:
+              route = MaterialPageRoute(
+                  builder: (_) => SnakeAnimationHomeScreen(),
+                  settings: settings);
+              break;
+
             default:
               route = MaterialPageRoute(builder: (_) => HomeScreen());
           }

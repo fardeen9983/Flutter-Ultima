@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ultima/sections/animations/shake_transition/shake_transition.dart';
+import 'package:flutter_ultima/sections/animations/snake_animation/about.dart';
 import 'package:flutter_ultima/sections/home/widgets/widget.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const TAG = "/home";
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -24,7 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         children: [
           HomeEntry(
-              title: "Shake Transition", next: ShakeTransitionAboutScreen.TAG)
+              title: "Shake Transition", next: ShakeTransitionAboutScreen.TAG),
+          HomeEntry(
+              title: "Snake Animation", next: SnakeAnimationAboutScreen.TAG)
         ],
       ),
     );
